@@ -1,0 +1,14 @@
+--- !tapi-tbd-v3
+archs:           [ x86_64 ]
+uuids:           [ 'x86_64: 4222973C-4CA8-3226-9D6E-073C905AFD65' ]
+platform:        macosx
+flags:           [ not_app_extension_safe ]
+install-name:    /usr/lib/libobjc-trampolines.dylib
+current-version: 228
+objc-constraint: none
+exports:         
+  - archs:           [ x86_64 ]
+    symbols:         [ __objc_blockTrampolineImpl, __objc_blockTrampolineImpl_stret, 
+                       __objc_blockTrampolineLast, __objc_blockTrampolineLast_stret, 
+                       __objc_blockTrampolineStart, __objc_blockTrampolineStart_stret ]
+...
